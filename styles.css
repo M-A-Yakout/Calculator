@@ -1,0 +1,94 @@
+:root {
+  --bg: #0d1117;
+  --surface: #161b22;
+  --text: #c9d1d9;
+  --primary: #58a6ff;
+  --danger: #f85149;
+  --radius: 12px;
+  --font-mono: "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  -webkit-font-smoothing: antialiased;
+}
+
+.calc {
+  width: min(100% - 2rem, 320px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-left: 300px;
+}
+
+.calc__display {
+  background: var(--surface);
+  padding: 1rem;
+  border-radius: var(--radius);
+  text-align: right;
+}
+
+.calc__output {
+  font-size: 2.25rem;
+  font-weight: 600;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.calc__keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.key {
+  background: var(--surface);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1rem;
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.key:hover {
+  background: #30363d;
+}
+
+.key:active {
+  transform: scale(0.95);
+}
+
+.key--span2 {
+  grid-column: span 2;
+}
+
+.key--func {
+  background: var(--danger);
+}
+
+.key--op {
+  background: var(--primary);
+}
+
+.key--enter {
+  background: #1f6feb;
+}

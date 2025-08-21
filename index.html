@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#0d1117" />
+</head>
+<body>
+  <main class="calc">
+    <section class="calc__display">
+      <output id="display" class="calc__output" aria-live="polite">0</output>
+    </section>
+
+    <section class="calc__keys">
+      <!-- Row 1 -->
+      <button class="key key--span2 key--func" data-action="clear">C</button>
+      <button class="key key--func" data-action="delete">⌫</button>
+      <button class="key key--op" data-action="operate" data-op="÷">÷</button>
+
+      <!-- Row 2 -->
+      <button class="key">7</button>
+      <button class="key">8</button>
+      <button class="key">9</button>
+      <button class="key key--op" data-action="operate" data-op="×">×</button>
+
+      <!-- Row 3 -->
+      <button class="key">4</button>
+      <button class="key">5</button>
+      <button class="key">6</button>
+      <button class="key key--op" data-action="operate" data-op="-">-</button>
+
+      <!-- Row 4 -->
+      <button class="key">1</button>
+      <button class="key">2</button>
+      <button class="key">3</button>
+      <button class="key key--op" data-action="operate" data-op="+">+</button>
+
+      <!-- Row 5 -->
+      <button class="key key--span2">0</button>
+      <button class="key">.</button>
+      <button class="key key--op key--enter" data-action="calculate">=</button>
+    </section>
+  </main>
+<!-- dotlottie -->
+
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc 
+  src="https://lottie.host/d8dc6bbc-3a95-4d25-98b4-d59c66322dff/7RI9Mv3v0d.lottie" 
+  style="width: 300px; height: 300px; position: relative; top: -300px; right: 300px;" 
+  speed="1" 
+  autoplay 
+  loop>
+</dotlottie-wc>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
