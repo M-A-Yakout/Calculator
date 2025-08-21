@@ -52,5 +52,3 @@ Features a playful **floating cloud GIF** above the interface, full keyboard sup
 - Swap the cloud GIF: replace `src` in the `<img class="cloud-gif">` tag.  
 - Colors & fonts: tweak CSS variables at the top of `styles.css`.  
 - Add new functions: extend the `performCalculation()` switch in `script.js`.
-
-MIT – see [LICENSE](LICENSE).
