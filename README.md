@@ -1,8 +1,6 @@
 # ☁️ Cloud Calculator
 
 # A sleek, lightning-fast **web calculator** built with vanilla HTML5, CSS3 (Flexbox + Grid) and ES6+ JavaScript.  
-Features a playful **floating cloud GIF** above the interface, full keyboard support, dark-mode-first design, and zero dependencies.
-
 ---
 
 ## 🚀 Live Demo  
